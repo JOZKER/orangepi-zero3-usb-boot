@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orangepi-zero3-usb-boot"
+version = "0.1.0"
+description = "Reproducible Orange Pi Zero 3 SPI to USB boot tooling and installation notes"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = ["pycdlib>=1.14,<2", "zstandard>=0.23,<1"]
+
+[project.optional-dependencies]
+serial = ["pyserial>=3.5,<4"]
+
+[project.scripts]
+zero3-prepare = "zero3_usb_boot.prepare:main"
+zero3-publish = "zero3_usb_boot.publish:main"
+zero3-spi = "zero3_usb_boot.spi:main"
+zero3-verify = "zero3_usb_boot.verify:main"
+
+[tool.setuptools.packages.find]
+include = ["zero3_usb_boot*"]

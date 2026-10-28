@@ -1,0 +1,21 @@
+{
+  "board": "Orange Pi Zero 3 H618",
+  "ram": "1.5 GiB as observed by Linux",
+  "iso": {
+    "filename": "ubuntu-26.10-live-server-arm64.iso",
+    "size": 3075813376,
+    "sha256": "45fec674fbce001b46447747a6d36964de3d2da2a5fbe2ece111b72dd769b4de",
+    "provenance": "Observed user-supplied input, not an assertion of Canonical signature verification",
+    "kernel": "7.3.0-9-generic"
+  },
+  "uboot": {
+    "package": "linux-u-boot-orangepizero3-current",
+    "version": "26.8.3",
+    "packageUrl": "https://apt.armbian.com/pool/main/l/linux-u-boot-orangepizero3-current/linux-u-boot-orangepizero3-current_26.8.3_arm64__2026.07-Sece3-P7ee6-H8076-V29c1-B5da4-R448a.deb",
+    "packageSha256": "1902bcaa7545b3e371e4d533b1869258f85759e722614b0a57d3d8035c8b4ebf",
+    "imageSha256": "34a7bd2ab228e974ceb87e22e4029d22ac17aecf488ec13fb63a6eb6cbfb7f40",
+    "imageSize": 906265
+  },
+  "spi": {"size": 16777216, "eraseSize": 4096},
+  "notes": "No original flash dump, device serial, network identity, account, login hash or credential is included."
+}
